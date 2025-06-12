@@ -10,6 +10,7 @@ services:
       MYSQL_PASSWORD: user
     ports:
       - "3306:3306"
+    command: --require_secure_transport=OFF
   web:
     build:
       context: .
